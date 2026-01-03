@@ -13,5 +13,5 @@ This project uses [uv](https://github.com/astral-sh/uv) for Python package manag
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com//pdfmerge.git](https://github.com/your-username/pdfmerge.git)
+git clone [https://github.com/advirao/pdfmerge.git](https://github.com/your-username/pdfmerge.git)
 cd pdfmerges
