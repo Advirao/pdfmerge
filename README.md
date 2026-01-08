@@ -2,15 +2,15 @@
 ```markdown
 # 📄 PDF Merger Tool – Local Usage Guide
 
-A lightweight **Streamlit** application built with Python to merge multiple PDF files using a simple drag-and-drop web interface. The app uses a Python PDF library (such as `pypdf` / `PyPDF2`) for PDF manipulation and can use `uv` for fast dependency management in a local environment. [web:7][web:10]
+A lightweight **Streamlit** application built with Python to merge multiple PDF files using a simple drag-and-drop web interface. The app uses a Python PDF library (such as `pypdf` / `PyPDF2`) for PDF manipulation and can use `uv` for fast dependency management in a local environment. 10]
 
 ---
 
 ## 🚀 Features
 
-- **Drag & Drop** upload of multiple PDF files directly in your browser. [web:7]  
-- **Fast merging** of PDFs into a single document using a Python PDF library. [web:10]  
-- **Runs locally** on your machine; your PDFs never leave your system. [web:7]  
+- **Drag & Drop** upload of multiple PDF files directly in your browser. 
+- **Fast merging** of PDFs into a single document using a Python PDF library.
+- **Runs locally** on your machine; your PDFs never leave your system.
 
 ---
 
@@ -18,11 +18,11 @@ A lightweight **Streamlit** application built with Python to merge multiple PDF 
 
 Make sure the following are installed:
 
-- **Python 3.9+** on your local machine. [web:7]  
-- **Git** (to clone the repository). [web:7]  
-- **uv** (optional but recommended) for fast, isolated Python environments. [web:7]  
+- **Python 3.9+** on your local machine. 
+- **Git** (to clone the repository).
+- **uv** (optional but recommended) for fast, isolated Python environments. 
 
-If you do not want to use `uv`, you can use a standard virtual environment (`venv`) and `pip` instead. [web:7]  
+If you do not want to use `uv`, you can use a standard virtual environment (`venv`) and `pip` instead. 
 
 ---
 
@@ -35,7 +35,7 @@ git clone https://github.com/Advirao/pdfmerge.git
 cd pdfmerge
 ```
 
-[web:7]
+
 
 ### 2. Create and activate environment
 
@@ -51,7 +51,7 @@ source .venv/bin/activate
 # .venv\Scripts\Activate.ps1
 ```
 
-[web:7]
+
 
 #### Option B – Using venv + pip
 
@@ -84,7 +84,7 @@ After the server starts, open your browser and go to:
 http://localhost:8501
 ```
 
-Streamlit will usually open this URL automatically in your default browser. [web:7]  
+Streamlit will usually open this URL automatically in your default browser.
 
 ---
 
@@ -94,26 +94,26 @@ Once the Streamlit app is running:
 
 1. **Upload PDFs**  
    - Use the drag-and-drop area or file picker labeled something like “Choose PDF files” or “Upload PDF files”.  
-   - Select **two or more** PDF files you want to merge. [web:7]
+   - Select **two or more** PDF files you want to merge. 
 
 2. **Check / reorder files (if supported)**  
    - If the UI shows a list of files, verify that all required PDFs are present.  
-   - If the app includes ordering controls (arrows or drag-and-drop), arrange the files in the sequence you want them to appear in the merged PDF. [web:7]
+   - If the app includes ordering controls (arrows or drag-and-drop), arrange the files in the sequence you want them to appear in the merged PDF. 
 
 3. **Start merging**  
    - Click the button labeled e.g. **“Merge PDFs”** or similar.  
-   - The backend uses a merger class from `pypdf` / `PyPDF2` to append pages from each uploaded file into a single PDF. [web:10]
+   - The backend uses a merger class from `pypdf` / `PyPDF2` to append pages from each uploaded file into a single PDF.
 
 4. **Download merged file**  
    - After processing, a **Download** button will appear (e.g. “Download merged PDF”).  
-   - Click it to save the generated merged document (often named `merged.pdf`) to your local machine. [web:7]
+   - Click it to save the generated merged document (often named `merged.pdf`) to your local machine. 
 
 ---
 
 ## 🔧 Notes & Tips
 
-- If you encounter issues with dependencies, re-run installation using `uv sync` or `pip install -r requirements.txt` (if such a file exists in the project). [web:7]  
-- Very large PDFs may take longer to merge depending on your machine’s resources. [web:10]  
+- If you encounter issues with dependencies, re-run installation using `uv sync` or `pip install -r requirements.txt` (if such a file exists in the project). 
+- Very large PDFs may take longer to merge depending on your machine’s resources. 
 ```
 
 
